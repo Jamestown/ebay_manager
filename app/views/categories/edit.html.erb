@@ -1,0 +1,13 @@
+<% form_for @category do |f| %>
+  <%= render :partial => 'category_form', :locals => {:f => f} %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<br />
+
+<p>
+  <%= link_to 'Show category', category_path(@category) %>
+  <%= link_to 'Show all categories', categories_path %>
+</p>

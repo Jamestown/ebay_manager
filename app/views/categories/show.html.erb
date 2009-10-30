@@ -1,0 +1,11 @@
+<dl>
+  <dt>Description</dt>
+  <dd><%= h @category.description %></dd>
+</dl>
+
+<br />
+
+<p>
+  <%= link_to 'Edit category', edit_category_path(@category) %>
+  <%= link_to 'Show all categories', categories_path %>
+</p>

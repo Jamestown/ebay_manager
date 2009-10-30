@@ -1,0 +1,27 @@
+books:
+  id: 1
+  description: 'Books'
+
+clothes:
+  id: 2
+  description: 'Clothes'
+
+misc:
+  id: 3
+  description: 'Miscellaneous'
+
+needlepoint:
+  id: 4
+  description: 'Needlepoint'
+
+prints:
+  id: 5
+  description: 'Prints'
+
+records:
+  id: 6
+  description: 'Records'
+
+trading_cards:
+  id: 7
+  description: 'Trading Cards'

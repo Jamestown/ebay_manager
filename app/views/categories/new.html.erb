@@ -1,0 +1,9 @@
+<fieldset id="category_form">
+  <legend>Category</legend>
+  <% form_for @category do |f| %>
+    <%= render :partial => 'category_form', :locals => {:f => f} %>
+    <p>
+      <%= f.submit 'Create '%>
+    </p>
+  <% end %>
+</fieldset>

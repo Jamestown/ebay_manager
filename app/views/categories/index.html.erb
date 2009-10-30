@@ -1,0 +1,20 @@
+<table id="index_item_list">
+  <tr>
+    <th>Category</th>
+    <th colspan="2"></th>
+  </tr>
+  <% @categories.each do |category| %>
+    <tr>
+      <td><%= link_to category.description, category_path(category) %></td>
+      <td><%= link_to 'Edit', edit_category_path(category) %></td>
+      <td>
+        <%= link_to 'Delete', category_path(category), :method => :delete,
+              :confirm => "Are you sure you want to delete #{category.description}?" %>
+      </td>
+	</tr>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to 'Create new category', new_category_path %>
+</p>
